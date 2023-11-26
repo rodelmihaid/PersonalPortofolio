@@ -10,15 +10,6 @@ export class NavbarComponent {
   isSmallScreen: boolean = false;
   constructor(private el: ElementRef) {}
 
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event: Event): void {
-  //   this.checkScreenSize();
-  // }
-
-  checkScreenSize(): void {
-    if (window.innerWidth <= 759) this.isSmallScreen = true;
-  }
-  nr: number = window.innerWidth;
   scrollToRoadComponent() {
     const roadComponent = this.el.nativeElement.querySelector('.road');
     if (roadComponent) {
@@ -37,7 +28,5 @@ export class NavbarComponent {
       up.scrollIntoView({ behavior: 'smooth' }); // Derulare lină
     }
   }
-  ngOnInit(): void {
-    this.checkScreenSize();
-  }
+  ngOnInit(): void {}
 }

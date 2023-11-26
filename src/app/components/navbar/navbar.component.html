@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar class="navbar-fullscreen">
   <mat-toolbar-row>
     <span class="logo" (click)="scrollUp()">
       <mat-icon style="font-size: 30px; padding-right: 35px"
@@ -7,13 +7,10 @@
       {{ name }}</span
     >
     <span class="spacer"> </span>
-    <button mat-button *ngIf="nr <= 768"><mat-icon>menu</mat-icon></button>
-    <span class="items" *ngIf="nr > 768">
-      <a mat-button (click)="scrollToRoadComponent()"> About me {{ nr }}</a>
+    <span class="items">
+      <a mat-button (click)="scrollToRoadComponent()"> About me</a>
       <a mat-button>Portofolio</a>
-      <a mat-button (click)="scrollContacts()"
-        >Contact{{ isSmallScreen }}</a
-      ></span
+      <a mat-button (click)="scrollContacts()">Contact</a></span
     >
   </mat-toolbar-row>
 </mat-toolbar>

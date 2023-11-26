@@ -24,12 +24,14 @@
 @media (max-width: 768px) {
   .image {
     background-attachment: scroll; /* Schimbați atașamentul imaginii pentru scroll */
-    background-size: auto; /* Anulați "cover" pentru a menține dimensiunea originală */
-    height: 89vh;
+    height: 60vh;
   }
 
   .text {
-    padding-top: 10vh; /* Reducere spațiu de sus */
+    padding-top: 20vh; /* Reducere spațiu de sus */
+  }
+  .text span {
+    font-size: 30px;
   }
 }
 
