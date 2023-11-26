@@ -1,0 +1,53 @@
+mat-toolbar {
+  background: radial-gradient(
+    circle at 52.1% -29.6%,
+    rgb(144, 17, 105) 0%,
+    rgb(51, 0, 131) 100.2%
+  );
+  color: white;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.9;
+}
+.logo {
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+mat-toolbar-row {
+  height: auto !important;
+  padding: 30px 0px;
+}
+mat-toolbar-row span {
+  font-size: 35px;
+  font-weight: bold;
+}
+.spacer {
+  padding-left: 30%;
+}
+span a {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+mat-toolbar-row a {
+  font-size: 35px;
+  color: black;
+}
+
+mat-toolbar-row a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+  .spacer {
+    padding-left: 20px;
+  }
+  .logo {
+    padding-left: 0;
+  }
+}

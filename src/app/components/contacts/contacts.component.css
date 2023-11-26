@@ -1,0 +1,22 @@
+.contacts-container {
+  height: 200px;
+  background-color: #18122b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-elements {
+  color: gray;
+  margin-left: 50px;
+  display: flex;
+}
+.text-elements {
+  font-weight: 700;
+  font-size: 25px;
+  color: grey;
+}
+
+.text-elements {
+  text-align: center;
+}

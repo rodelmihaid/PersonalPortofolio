@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="logo" (click)="scrollUp()">
+      <mat-icon style="font-size: 30px; padding-right: 35px"
+        >card_membership</mat-icon
+      >
+      {{ name }}</span
+    >
+    <span class="spacer"> </span>
+    <button mat-button *ngIf="nr <= 768"><mat-icon>menu</mat-icon></button>
+    <span class="items" *ngIf="nr > 768">
+      <a mat-button (click)="scrollToRoadComponent()"> About me {{ nr }}</a>
+      <a mat-button>Portofolio</a>
+      <a mat-button (click)="scrollContacts()"
+        >Contact{{ isSmallScreen }}</a
+      ></span
+    >
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<app-main-body style="margin-top: 100px" class="up"></app-main-body>
+<app-road class="road"></app-road>
+<app-contacts class="contacts"></app-contacts>

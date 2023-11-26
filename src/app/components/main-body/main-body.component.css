@@ -1,0 +1,47 @@
+.image {
+  background-attachment: fixed;
+  background-image: url("../../../assets/back2.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.text {
+  padding-top: 30vh;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 50px;
+}
+.text span {
+  font-size: 50px;
+  padding-top: 60px;
+}
+/* Stilurile pentru ecranele mai mici de 768px */
+@media (max-width: 768px) {
+  .image {
+    background-attachment: scroll; /* Schimbați atașamentul imaginii pentru scroll */
+    background-size: auto; /* Anulați "cover" pentru a menține dimensiunea originală */
+    height: 89vh;
+  }
+
+  .text {
+    padding-top: 10vh; /* Reducere spațiu de sus */
+  }
+}
+
+/* Stilurile pentru ecranele mai mari de 768px */
+@media (min-width: 769px) {
+  .image {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .text {
+    padding-top: 30vh;
+  }
+}

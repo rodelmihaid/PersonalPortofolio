@@ -1,0 +1,76 @@
+.card {
+  width: 350px;
+  height: auto !important;
+  border: 4px solid #5b0888;
+  border-radius: 20%;
+  background-color: #192655 !important;
+}
+.container {
+  padding-top: 100px;
+  background-color: white;
+  background-color: #192655;
+}
+.elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 200px;
+}
+
+mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-title {
+  color: white;
+  font-weight: bolder;
+  font-size: 60px;
+  padding-top: 30px;
+}
+.content {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 30px;
+}
+.content-mat-card {
+  padding-top: 30px;
+}
+.content-ul {
+  margin-top: 10px;
+}
+.content-h1 {
+  font-weight: 500;
+}
+.card:hover {
+  box-shadow: 0 50px 62px 2px rgba(46, 51, 60, 0.2);
+  transition: all 300ms ease;
+  transform: translateY(-30px);
+}
+.mat-mdc-card-content:last-child {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Lățimea completă a ecranului */
+    height: auto; /* Înălțimea se va ajusta automat pentru conținut */
+    border-radius: 0; /* Eliminați border-radius pentru a face colțurile drepte */
+  }
+
+  .container {
+    padding-top: 50px; /* Reducere spațiu de sus */
+  }
+
+  .elements {
+    flex-direction: column; /* Modificați direcția de afișare a elementelor */
+    justify-content: center; /* Afișați elementele în centru */
+    padding-top: 30px; /* Reducere spațiu de sus */
+  }
+
+  mat-card-header {
+    display: block; /* Eliminați afișarea flex pentru antet */
+    text-align: center; /* Centrare antet */
+  }
+}
